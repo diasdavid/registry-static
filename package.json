@@ -41,7 +41,8 @@
     "test": "istanbul cover --print both -- _mocha tests"
   },
   "pre-commit": [
-    "lint"
+    "lint",
+    "test"
   ],
   "repository": {
     "type": "git",

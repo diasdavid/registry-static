@@ -89,6 +89,7 @@ describe('verify', function () {
     beforeEach(clearData)
 
     it('downloads the file and calls verify', function (done) {
+      this.timeout(1000000)
       var info = {
         path: '//registry-static/-/registry-static-0.1.11.tgz',
         tarball: 'registry-static-0.1.11.tgz'
@@ -117,6 +118,7 @@ describe('verify', function () {
     })
 
     it('tries to download with a 404 file and calls back with an error', function (done) {
+      this.timeout(1000000)
       // var callback = this.callback
       var info = {
         path: '//foobarbaz.tgz',
